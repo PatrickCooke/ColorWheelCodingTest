@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ColorWheelWatch (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ColorWheelWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>ObjCCodeChallenge.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>43C5EB931D430BE9003FD316</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43C5EBBA1D430CC1003FD316</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>43C5EBE11D430CFB003FD316</key>
 		<dict>
 			<key>primary</key>
 			<true/>

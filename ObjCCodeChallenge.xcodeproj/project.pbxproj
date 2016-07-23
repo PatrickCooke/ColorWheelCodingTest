@@ -13,7 +13,61 @@
 		43C5EBA21D430BE9003FD316 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C5EBA01D430BE9003FD316 /* Main.storyboard */; };
 		43C5EBA41D430BE9003FD316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C5EBA31D430BE9003FD316 /* Assets.xcassets */; };
 		43C5EBA71D430BE9003FD316 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C5EBA51D430BE9003FD316 /* LaunchScreen.storyboard */; };
+		43C5EBB31D430C20003FD316 /* RotaryWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5EBB01D430C20003FD316 /* RotaryWheel.m */; };
+		43C5EBB41D430C20003FD316 /* Sector.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C5EBB21D430C20003FD316 /* Sector.m */; };
+		43C5EBB61D430C51003FD316 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C5EBB51D430C51003FD316 /* QuartzCore.framework */; };
+		43C5EBB81D430C57003FD316 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C5EBB71D430C57003FD316 /* WatchConnectivity.framework */; };
+		43C5EBE61D430CFC003FD316 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C5EBE41D430CFC003FD316 /* Interface.storyboard */; };
+		43C5EBE81D430CFC003FD316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C5EBE71D430CFC003FD316 /* Assets.xcassets */; };
+		43C5EBEF1D430CFC003FD316 /* ColorWheelWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43C5EBEE1D430CFC003FD316 /* ColorWheelWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43C5EBF61D430CFC003FD316 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5EBF51D430CFC003FD316 /* InterfaceController.swift */; };
+		43C5EBF81D430CFC003FD316 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5EBF71D430CFC003FD316 /* ExtensionDelegate.swift */; };
+		43C5EBFA1D430CFC003FD316 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C5EBF91D430CFC003FD316 /* NotificationController.swift */; };
+		43C5EBFC1D430CFC003FD316 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43C5EBFB1D430CFC003FD316 /* Assets.xcassets */; };
+		43C5EC001D430CFC003FD316 /* ColorWheelWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 43C5EBE21D430CFB003FD316 /* ColorWheelWatch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43C5EBF01D430CFC003FD316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43C5EB8C1D430BE9003FD316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43C5EBED1D430CFC003FD316;
+			remoteInfo = "ColorWheelWatch Extension";
+		};
+		43C5EBFE1D430CFC003FD316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43C5EB8C1D430BE9003FD316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43C5EBE11D430CFB003FD316;
+			remoteInfo = ColorWheelWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43C5EBDF1D430CC1003FD316 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				43C5EC001D430CFC003FD316 /* ColorWheelWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C5EC041D430CFC003FD316 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43C5EBEF1D430CFC003FD316 /* ColorWheelWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		43C5EB941D430BE9003FD316 /* ObjCCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjCCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +80,37 @@
 		43C5EBA31D430BE9003FD316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43C5EBA61D430BE9003FD316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43C5EBA81D430BE9003FD316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C5EBAE1D430C20003FD316 /* RotaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotaryProtocol.h; sourceTree = "<group>"; };
+		43C5EBAF1D430C20003FD316 /* RotaryWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotaryWheel.h; sourceTree = "<group>"; };
+		43C5EBB01D430C20003FD316 /* RotaryWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotaryWheel.m; sourceTree = "<group>"; };
+		43C5EBB11D430C20003FD316 /* Sector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sector.h; sourceTree = "<group>"; };
+		43C5EBB21D430C20003FD316 /* Sector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sector.m; sourceTree = "<group>"; };
+		43C5EBB51D430C51003FD316 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43C5EBB71D430C57003FD316 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		43C5EBE21D430CFB003FD316 /* ColorWheelWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorWheelWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C5EBE51D430CFC003FD316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		43C5EBE71D430CFC003FD316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43C5EBE91D430CFC003FD316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43C5EBEE1D430CFC003FD316 /* ColorWheelWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ColorWheelWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C5EBF41D430CFC003FD316 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		43C5EBF51D430CFC003FD316 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		43C5EBF71D430CFC003FD316 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		43C5EBF91D430CFC003FD316 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		43C5EBFB1D430CFC003FD316 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43C5EBFD1D430CFC003FD316 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		43C5EB911D430BE9003FD316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C5EBB81D430C57003FD316 /* WatchConnectivity.framework in Frameworks */,
+				43C5EBB61D430C51003FD316 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C5EBEB1D430CFC003FD316 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +123,11 @@
 		43C5EB8B1D430BE9003FD316 = {
 			isa = PBXGroup;
 			children = (
+				43C5EBB71D430C57003FD316 /* WatchConnectivity.framework */,
+				43C5EBB51D430C51003FD316 /* QuartzCore.framework */,
 				43C5EB961D430BE9003FD316 /* ObjCCodeChallenge */,
+				43C5EBE31D430CFC003FD316 /* ColorWheelWatch */,
+				43C5EBF21D430CFC003FD316 /* ColorWheelWatch Extension */,
 				43C5EB951D430BE9003FD316 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				43C5EB941D430BE9003FD316 /* ObjCCodeChallenge.app */,
+				43C5EBE21D430CFB003FD316 /* ColorWheelWatch.app */,
+				43C5EBEE1D430CFC003FD316 /* ColorWheelWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +149,11 @@
 				43C5EB9B1D430BE9003FD316 /* AppDelegate.m */,
 				43C5EB9D1D430BE9003FD316 /* ViewController.h */,
 				43C5EB9E1D430BE9003FD316 /* ViewController.m */,
+				43C5EBAE1D430C20003FD316 /* RotaryProtocol.h */,
+				43C5EBAF1D430C20003FD316 /* RotaryWheel.h */,
+				43C5EBB01D430C20003FD316 /* RotaryWheel.m */,
+				43C5EBB11D430C20003FD316 /* Sector.h */,
+				43C5EBB21D430C20003FD316 /* Sector.m */,
 				43C5EBA01D430BE9003FD316 /* Main.storyboard */,
 				43C5EBA31D430BE9003FD316 /* Assets.xcassets */,
 				43C5EBA51D430BE9003FD316 /* LaunchScreen.storyboard */,
@@ -79,6 +171,37 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		43C5EBE31D430CFC003FD316 /* ColorWheelWatch */ = {
+			isa = PBXGroup;
+			children = (
+				43C5EBE41D430CFC003FD316 /* Interface.storyboard */,
+				43C5EBE71D430CFC003FD316 /* Assets.xcassets */,
+				43C5EBE91D430CFC003FD316 /* Info.plist */,
+			);
+			path = ColorWheelWatch;
+			sourceTree = "<group>";
+		};
+		43C5EBF21D430CFC003FD316 /* ColorWheelWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				43C5EBF51D430CFC003FD316 /* InterfaceController.swift */,
+				43C5EBF71D430CFC003FD316 /* ExtensionDelegate.swift */,
+				43C5EBF91D430CFC003FD316 /* NotificationController.swift */,
+				43C5EBFB1D430CFC003FD316 /* Assets.xcassets */,
+				43C5EBFD1D430CFC003FD316 /* Info.plist */,
+				43C5EBF31D430CFC003FD316 /* Supporting Files */,
+			);
+			path = "ColorWheelWatch Extension";
+			sourceTree = "<group>";
+		};
+		43C5EBF31D430CFC003FD316 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43C5EBF41D430CFC003FD316 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,15 +212,51 @@
 				43C5EB901D430BE9003FD316 /* Sources */,
 				43C5EB911D430BE9003FD316 /* Frameworks */,
 				43C5EB921D430BE9003FD316 /* Resources */,
+				43C5EBDF1D430CC1003FD316 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				43C5EBFF1D430CFC003FD316 /* PBXTargetDependency */,
 			);
 			name = ObjCCodeChallenge;
 			productName = ObjCCodeChallenge;
 			productReference = 43C5EB941D430BE9003FD316 /* ObjCCodeChallenge.app */;
 			productType = "com.apple.product-type.application";
+		};
+		43C5EBE11D430CFB003FD316 /* ColorWheelWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C5EC051D430CFC003FD316 /* Build configuration list for PBXNativeTarget "ColorWheelWatch" */;
+			buildPhases = (
+				43C5EBE01D430CFB003FD316 /* Resources */,
+				43C5EC041D430CFC003FD316 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43C5EBF11D430CFC003FD316 /* PBXTargetDependency */,
+			);
+			name = ColorWheelWatch;
+			productName = ColorWheelWatch;
+			productReference = 43C5EBE21D430CFB003FD316 /* ColorWheelWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		43C5EBED1D430CFC003FD316 /* ColorWheelWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43C5EC011D430CFC003FD316 /* Build configuration list for PBXNativeTarget "ColorWheelWatch Extension" */;
+			buildPhases = (
+				43C5EBEA1D430CFC003FD316 /* Sources */,
+				43C5EBEB1D430CFC003FD316 /* Frameworks */,
+				43C5EBEC1D430CFC003FD316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ColorWheelWatch Extension";
+			productName = "ColorWheelWatch Extension";
+			productReference = 43C5EBEE1D430CFC003FD316 /* ColorWheelWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,10 +264,17 @@
 		43C5EB8C1D430BE9003FD316 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Patrick Cooke";
 				TargetAttributes = {
 					43C5EB931D430BE9003FD316 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					43C5EBE11D430CFB003FD316 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					43C5EBED1D430CFC003FD316 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -127,6 +293,8 @@
 			projectRoot = "";
 			targets = (
 				43C5EB931D430BE9003FD316 /* ObjCCodeChallenge */,
+				43C5EBE11D430CFB003FD316 /* ColorWheelWatch */,
+				43C5EBED1D430CFC003FD316 /* ColorWheelWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +310,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		43C5EBE01D430CFB003FD316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C5EBE81D430CFC003FD316 /* Assets.xcassets in Resources */,
+				43C5EBE61D430CFC003FD316 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C5EBEC1D430CFC003FD316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C5EBFC1D430CFC003FD316 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -151,11 +336,36 @@
 			files = (
 				43C5EB9F1D430BE9003FD316 /* ViewController.m in Sources */,
 				43C5EB9C1D430BE9003FD316 /* AppDelegate.m in Sources */,
+				43C5EBB31D430C20003FD316 /* RotaryWheel.m in Sources */,
 				43C5EB991D430BE9003FD316 /* main.m in Sources */,
+				43C5EBB41D430C20003FD316 /* Sector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43C5EBEA1D430CFC003FD316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C5EBFA1D430CFC003FD316 /* NotificationController.swift in Sources */,
+				43C5EBF81D430CFC003FD316 /* ExtensionDelegate.swift in Sources */,
+				43C5EBF61D430CFC003FD316 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43C5EBF11D430CFC003FD316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43C5EBED1D430CFC003FD316 /* ColorWheelWatch Extension */;
+			targetProxy = 43C5EBF01D430CFC003FD316 /* PBXContainerItemProxy */;
+		};
+		43C5EBFF1D430CFC003FD316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43C5EBE11D430CFB003FD316 /* ColorWheelWatch */;
+			targetProxy = 43C5EBFE1D430CFC003FD316 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		43C5EBA01D430BE9003FD316 /* Main.storyboard */ = {
@@ -172,6 +382,14 @@
 				43C5EBA61D430BE9003FD316 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		43C5EBE41D430CFC003FD316 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43C5EBE51D430CFC003FD316 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -283,6 +501,68 @@
 			};
 			name = Release;
 		};
+		43C5EC021D430CFC003FD316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ColorWheelWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbypat.ObjCCodeChallenge.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		43C5EC031D430CFC003FD316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ColorWheelWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbypat.ObjCCodeChallenge.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		43C5EC061D430CFC003FD316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ColorWheelWatch_Extension;
+				INFOPLIST_FILE = ColorWheelWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbypat.ObjCCodeChallenge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		43C5EC071D430CFC003FD316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = ColorWheelWatch_Extension;
+				INFOPLIST_FILE = ColorWheelWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appsbypat.ObjCCodeChallenge.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -300,6 +580,22 @@
 			buildConfigurations = (
 				43C5EBAC1D430BE9003FD316 /* Debug */,
 				43C5EBAD1D430BE9003FD316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43C5EC011D430CFC003FD316 /* Build configuration list for PBXNativeTarget "ColorWheelWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C5EC021D430CFC003FD316 /* Debug */,
+				43C5EC031D430CFC003FD316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		43C5EC051D430CFC003FD316 /* Build configuration list for PBXNativeTarget "ColorWheelWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C5EC061D430CFC003FD316 /* Debug */,
+				43C5EC071D430CFC003FD316 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
